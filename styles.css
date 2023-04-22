@@ -1,0 +1,165 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;   
+    margin: auto;
+}
+
+h1 {
+    background-color: white;
+    color: #007d7b;
+    font-size: 3em;
+    font-weight: bold;
+    padding: .25em;
+    margin-top: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: .1em;
+}
+
+main {
+    background-color: white;
+}
+
+section {
+    padding: 0 12.5px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    padding: .5em 0 0 0;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    bottom: 2em;
+    position: relative;
+    text-shadow: 1px 1.5px black;
+}
+
+#contact {
+    background-color: black;
+    color: white;
+}
+
+#contact p {
+    text-align: center;
+}
+
+form {
+    width: 75%;
+    margin: auto;
+    padding: 0%;
+    display: block;
+}
+
+form ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    color: #007d7b;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+form ul li:nth-of-type(even) {
+    padding-bottom: 3%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 2%;
+    font-size: 1em;
+}
+
+label {
+    padding-left: 2%;
+}
+
+[type=submit] {
+    background-color: #007d7b;
+    border-style: none;
+    border-radius: 1em;
+    color: white;
+    width: 50%;
+    margin: 3% 25% 10% 25%;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:880px) {
+    #tiled { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2%;
+        row-gap: 0;
+    }
+        
+}
+
+@media screen and (min-width:1000px) {
+    nav ul {
+        justify-content: right;
+    }
+    #tiled { 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
